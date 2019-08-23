@@ -1,3 +1,5 @@
+
+'Folder Path:
 Set diaFolder = Application.FileDialog(msoFileDialogFolderPicker)
     diaFolder.AllowMultiSelect = False
     selected = diaFolder.Show
@@ -5,3 +7,5 @@ Set diaFolder = Application.FileDialog(msoFileDialogFolderPicker)
     If selected Then
         strPath = diaFolder.SelectedItems(1)
     End If
+'File Path
+   wbRaw = Workbooks.Open(strPath)
