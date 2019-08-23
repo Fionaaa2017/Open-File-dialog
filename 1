@@ -1,0 +1,7 @@
+Set diaFolder = Application.FileDialog(msoFileDialogFolderPicker)
+    diaFolder.AllowMultiSelect = False
+    selected = diaFolder.Show
+
+    If selected Then
+        strPath = diaFolder.SelectedItems(1)
+    End If
